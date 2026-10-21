@@ -87,36 +87,36 @@ body {
 
 /* -------------------------------------------------------------
    RESPONSIVE CONSTANT-SPEED ORBIT KEYFRAMES
-   1. orbitMobile (< 640px): Radius 105px — completely contained in mobile viewports without overflowing
+   1. orbitMobile (< 640px): Radius 132px — cards spaced smoothly without bunching up or overflowing screen
    2. orbitTablet (640px - 1023px): Radius 200px — scaled for tablets
    3. orbitDesktop (1024px+): Radius 320px — full desktop majestic orbit
    ------------------------------------------------------------- */
 @keyframes orbitMobile {
-  0.0% { transform: translate3d(105.0px, 0.0px, 0px) scale(0.85); opacity: 0.88; z-index: 35; }
-  4.2% { transform: translate3d(88.3px, 8.6px, 0px) scale(0.90); opacity: 0.94; z-index: 35; }
-  8.3% { transform: translate3d(70.7px, 11.8px, 0px) scale(0.93); opacity: 0.97; z-index: 35; }
-  12.5% { transform: translate3d(53.0px, 13.8px, 0px) scale(0.95); opacity: 0.98; z-index: 35; }
-  16.7% { transform: translate3d(35.3px, 15.0px, 0px) scale(0.96); opacity: 0.99; z-index: 35; }
-  20.8% { transform: translate3d(17.7px, 15.7px, 0px) scale(0.97); opacity: 1.0; z-index: 35; }
-  25.0% { transform: translate3d(0.0px, 16.0px, 0px) scale(0.97); opacity: 1.0; z-index: 35; }
-  29.2% { transform: translate3d(-17.7px, 15.7px, 0px) scale(0.97); opacity: 1.0; z-index: 35; }
-  33.3% { transform: translate3d(-35.3px, 15.0px, 0px) scale(0.96); opacity: 0.99; z-index: 35; }
-  37.5% { transform: translate3d(-53.0px, 13.8px, 0px) scale(0.95); opacity: 0.98; z-index: 35; }
-  41.7% { transform: translate3d(-70.7px, 11.8px, 0px) scale(0.93); opacity: 0.97; z-index: 35; }
-  45.8% { transform: translate3d(-88.3px, 8.6px, 0px) scale(0.90); opacity: 0.94; z-index: 35; }
-  50.0% { transform: translate3d(-105.0px, -0.0px, 0px) scale(0.85); opacity: 0.82; z-index: 10; }
-  54.2% { transform: translate3d(-88.3px, -8.6px, 0px) scale(0.78); opacity: 0.68; z-index: 10; }
-  58.3% { transform: translate3d(-70.7px, -11.8px, 0px) scale(0.75); opacity: 0.64; z-index: 10; }
-  62.5% { transform: translate3d(-53.0px, -13.8px, 0px) scale(0.73); opacity: 0.60; z-index: 10; }
-  66.7% { transform: translate3d(-35.3px, -15.0px, 0px) scale(0.72); opacity: 0.58; z-index: 10; }
-  70.8% { transform: translate3d(-17.7px, -15.7px, 0px) scale(0.71); opacity: 0.56; z-index: 10; }
-  75.0% { transform: translate3d(0.0px, -16.0px, 0px) scale(0.71); opacity: 0.56; z-index: 10; }
-  79.2% { transform: translate3d(17.7px, -15.7px, 0px) scale(0.71); opacity: 0.56; z-index: 10; }
-  83.3% { transform: translate3d(35.3px, -15.0px, 0px) scale(0.72); opacity: 0.58; z-index: 10; }
-  87.5% { transform: translate3d(53.0px, -13.8px, 0px) scale(0.73); opacity: 0.60; z-index: 10; }
-  91.7% { transform: translate3d(70.7px, -11.8px, 0px) scale(0.75); opacity: 0.64; z-index: 10; }
-  95.8% { transform: translate3d(88.3px, -8.6px, 0px) scale(0.78); opacity: 0.68; z-index: 10; }
-  100.0% { transform: translate3d(105.0px, -0.0px, 0px) scale(0.85); opacity: 0.88; z-index: 10; }
+  0.0% { transform: translate3d(132.0px, 0.0px, 0px) scale(0.88); opacity: 0.90; z-index: 35; }
+  4.2% { transform: translate3d(127.5px, 4.4px, 0px) scale(0.92); opacity: 0.95; z-index: 35; }
+  8.3% { transform: translate3d(114.3px, 8.5px, 0px) scale(0.95); opacity: 0.97; z-index: 35; }
+  12.5% { transform: translate3d(93.3px, 12.0px, 0px) scale(0.97); opacity: 0.98; z-index: 35; }
+  16.7% { transform: translate3d(66.0px, 14.7px, 0px) scale(0.98); opacity: 0.99; z-index: 35; }
+  20.8% { transform: translate3d(34.2px, 16.4px, 0px) scale(0.99); opacity: 1.0; z-index: 35; }
+  25.0% { transform: translate3d(0.0px, 17.0px, 0px) scale(0.99); opacity: 1.0; z-index: 35; }
+  29.2% { transform: translate3d(-34.2px, 16.4px, 0px) scale(0.99); opacity: 1.0; z-index: 35; }
+  33.3% { transform: translate3d(-66.0px, 14.7px, 0px) scale(0.98); opacity: 0.99; z-index: 35; }
+  37.5% { transform: translate3d(-93.3px, 12.0px, 0px) scale(0.97); opacity: 0.98; z-index: 35; }
+  41.7% { transform: translate3d(-114.3px, 8.5px, 0px) scale(0.95); opacity: 0.97; z-index: 35; }
+  45.8% { transform: translate3d(-127.5px, 4.4px, 0px) scale(0.92); opacity: 0.95; z-index: 35; }
+  50.0% { transform: translate3d(-132.0px, -0.0px, 0px) scale(0.88); opacity: 0.82; z-index: 10; }
+  54.2% { transform: translate3d(-127.5px, -4.4px, 0px) scale(0.80); opacity: 0.68; z-index: 10; }
+  58.3% { transform: translate3d(-114.3px, -8.5px, 0px) scale(0.77); opacity: 0.64; z-index: 10; }
+  62.5% { transform: translate3d(-93.3px, -12.0px, 0px) scale(0.75); opacity: 0.60; z-index: 10; }
+  66.7% { transform: translate3d(-66.0px, -14.7px, 0px) scale(0.73); opacity: 0.58; z-index: 10; }
+  70.8% { transform: translate3d(-34.2px, -16.4px, 0px) scale(0.72); opacity: 0.56; z-index: 10; }
+  75.0% { transform: translate3d(0.0px, -17.0px, 0px) scale(0.72); opacity: 0.56; z-index: 10; }
+  79.2% { transform: translate3d(34.2px, -16.4px, 0px) scale(0.72); opacity: 0.56; z-index: 10; }
+  83.3% { transform: translate3d(66.0px, -14.7px, 0px) scale(0.73); opacity: 0.58; z-index: 10; }
+  87.5% { transform: translate3d(93.3px, -12.0px, 0px) scale(0.75); opacity: 0.60; z-index: 10; }
+  91.7% { transform: translate3d(114.3px, -8.5px, 0px) scale(0.77); opacity: 0.64; z-index: 10; }
+  95.8% { transform: translate3d(127.5px, -4.4px, 0px) scale(0.80); opacity: 0.68; z-index: 10; }
+  100.0% { transform: translate3d(132.0px, -0.0px, 0px) scale(0.88); opacity: 0.90; z-index: 10; }
 }
 
 @keyframes orbitTablet {

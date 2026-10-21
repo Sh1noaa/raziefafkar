@@ -115,10 +115,10 @@ export default function Hero() {
       {/* =========================================================================
           HERO CORE: HEADLINE (WITH 'E' TOGGLE BUTTON & DYNAMIC SCROLL SLIDING 'AND EXPLORE'), SUBHEADLINE, CTAS
           ========================================================================= */}
-      <div className="relative z-20 max-w-4xl mx-auto text-center flex flex-col items-center flex-none pt-1">
+      <div className="relative z-20 max-w-4xl mx-auto text-center flex flex-col items-center flex-none pt-2 sm:pt-4 md:pt-6">
         
         {/* Main Headline (Playfair Display) */}
-        <h1 className="font-['Playfair_Display'] text-[1.65rem] xs:text-3xl sm:text-4xl md:text-5xl lg:text-[4.1rem] xl:text-[4.6rem] font-normal leading-[1.16] tracking-[-0.03em] text-[#111111] text-balance mb-2.5 sm:mb-3">
+        <h1 className="font-['Playfair_Display'] text-[1.85rem] xs:text-[2.15rem] sm:text-4xl md:text-5xl lg:text-[4.1rem] xl:text-[4.6rem] font-normal leading-[1.16] tracking-[-0.03em] text-[#111111] text-balance mb-3 sm:mb-3.5">
           Hello! Let&apos;s conn
           {/* Interactive Toggle Switch replacing letter 'E' in 'connect' */}
           <button
@@ -186,17 +186,17 @@ export default function Hero() {
           with me
         </h1>
 
-        {/* Subheadline */}
-        <p className="font-['Inter'] text-xs sm:text-sm md:text-[14.5px] text-neutral-500 max-w-2xl mx-auto leading-relaxed mb-3.5 sm:mb-4 font-normal text-balance">
+        {/* Subheadline (Slightly larger with comfortable balanced line height) */}
+        <p className="font-['Inter'] text-[13px] xs:text-[14px] sm:text-[15px] md:text-[15.5px] text-neutral-500 max-w-2xl mx-auto leading-relaxed mb-4 sm:mb-5 font-normal text-balance">
           I&apos;m <span className="text-neutral-900 font-medium">Razief</span>. I clock in, write clean code, and meet deadlines, just like everyone else. But I also believe that the best digital experiences are made by people who haven&apos;t forgotten how to have fun. This is my little corner of the internet.
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex items-center justify-center gap-3.5 mb-1">
+        <div className="flex items-center justify-center gap-3.5 mb-2.5 sm:mb-4 md:mb-5">
           {/* Primary CTA */}
           <a
             href="#about"
-            className="group inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#111111] text-white text-xs sm:text-sm font-medium transition-all duration-300 hover:bg-neutral-800 hover:shadow-[0_8px_20px_rgba(0,0,0,0.15)] hover:-translate-y-0.5 active:translate-y-0"
+            className="group inline-flex items-center gap-2 px-5 sm:px-6 py-2 sm:py-2.5 rounded-full bg-[#111111] text-white text-xs sm:text-sm font-medium transition-all duration-300 hover:bg-neutral-800 hover:shadow-[0_8px_20px_rgba(0,0,0,0.15)] hover:-translate-y-0.5 active:translate-y-0"
           >
             <span>Persona Map</span>
             <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -205,7 +205,7 @@ export default function Hero() {
           {/* Secondary CTA */}
           <a
             href="/cv.pdf"
-            className="group inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-transparent border border-black/20 text-[#111111] text-xs sm:text-sm font-medium transition-all duration-300 hover:border-[#111111] hover:bg-black/[0.03] hover:-translate-y-0.5 active:translate-y-0"
+            className="group inline-flex items-center gap-2 px-5 sm:px-6 py-2 sm:py-2.5 rounded-full bg-transparent border border-black/20 text-[#111111] text-xs sm:text-sm font-medium transition-all duration-300 hover:border-[#111111] hover:bg-black/[0.03] hover:-translate-y-0.5 active:translate-y-0"
           >
             <Download className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-y-0.5" />
             <span>Download CV</span>
@@ -349,7 +349,7 @@ export default function Hero() {
                   style={{ animationDelay: card.delay }}
                   className="animate-orbit-dynamic absolute pointer-events-none select-none"
                 >
-                  <div className="orbit-frosted-glass rounded-xl sm:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 w-[115px] xs:w-[130px] sm:w-[170px] md:min-w-[205px]">
+                  <div className="orbit-frosted-glass rounded-xl sm:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 w-[102px] xs:w-[118px] sm:w-[165px] md:min-w-[205px]">
                     <div className="flex items-center gap-1 xs:gap-1.5 sm:gap-2 mb-0.5 sm:mb-1">
                       <div className="w-4 h-4 xs:w-5 xs:h-5 rounded-md bg-white/90 border border-black/[0.06] flex items-center justify-center flex-none">
                         <Icon className={`w-2.5 h-2.5 xs:w-3.5 xs:h-3.5 ${card.iconColor}`} />
@@ -367,16 +367,16 @@ export default function Hero() {
             })}
           </div>
 
-          {/* Center Lego Minifigure (At z-20: Cards in front have z-35, cards behind have z-10) */}
-          <div className="relative z-20 w-[220px] xs:w-[260px] sm:w-[360px] md:w-[440px] lg:w-[500px] xl:w-[540px] max-h-full flex items-center justify-center pointer-events-none select-none">
+          {/* Center Lego Minifigure (Slightly enlarged to fill space harmoniously without overflowing) */}
+          <div className="relative z-20 w-[245px] xs:w-[290px] sm:w-[385px] md:w-[460px] lg:w-[520px] xl:w-[560px] max-h-full flex items-center justify-center pointer-events-none select-none">
             <img
               src="/lego-me.png"
               alt="Lego Minifigure waving with hand wearing Indonesian Batik shirt and ID lanyard"
-              className="w-full h-auto max-h-[280px] xs:max-h-[320px] sm:max-h-[390px] md:max-h-[440px] xl:max-h-[470px] object-contain select-none pointer-events-none lego-fade-mask"
+              className="w-full h-auto max-h-[305px] xs:max-h-[345px] sm:max-h-[410px] md:max-h-[460px] xl:max-h-[485px] object-contain select-none pointer-events-none lego-fade-mask"
               loading="eager"
             />
             {/* Ground Contact Shadow */}
-            <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-40 xs:w-48 sm:w-60 md:w-68 h-4 bg-black/[0.06] blur-lg rounded-full pointer-events-none" />
+            <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-48 xs:w-56 sm:w-68 md:w-76 h-4 bg-black/[0.06] blur-lg rounded-full pointer-events-none" />
           </div>
 
         </div>

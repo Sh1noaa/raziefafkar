@@ -613,24 +613,24 @@ export default function Projects() {
                   <div className="relative rounded-2xl bg-white border border-neutral-200/90 shadow-[0_12px_32px_rgba(0,0,0,0.06)] overflow-hidden transition-all duration-300">
                     
                     {/* Browser Window Header Chrome */}
-                    <div className="bg-[#FAF9F6] border-b border-neutral-200 px-4 py-3 flex items-center justify-between">
+                    <div className="bg-[#FAF9F6] border-b border-neutral-200 px-2.5 sm:px-4 py-2 sm:py-3 flex items-center justify-between gap-1.5 sm:gap-2 overflow-hidden">
                       {/* Mac-style Window Controls */}
-                      <div className="flex items-center gap-2">
-                        <div className="w-3 h-3 rounded-full bg-[#FF605C] border border-[#E14844]" />
-                        <div className="w-3 h-3 rounded-full bg-[#FFBD44] border border-[#DF9F2D]" />
-                        <div className="w-3 h-3 rounded-full bg-[#00CA4E] border border-[#009E3D]" />
+                      <div className="flex items-center gap-1.5 sm:gap-2 flex-none">
+                        <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#FF605C] border border-[#E14844]" />
+                        <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#FFBD44] border border-[#DF9F2D]" />
+                        <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#00CA4E] border border-[#009E3D]" />
                       </div>
 
-                      {/* Fake URL Address Pill */}
-                      <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-neutral-200/90 text-xs text-neutral-600 font-mono shadow-xs">
-                        <Lock className="w-3 h-3 text-emerald-600" />
-                        <span>digisafepurwakarta.web.id</span>
+                      {/* Fake URL Address Pill (Responsive text, icon, and padding to prevent cutoffs on mobile) */}
+                      <div className="min-w-0 max-w-[215px] sm:max-w-none flex items-center justify-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full bg-white border border-neutral-200/90 text-[10px] sm:text-xs text-neutral-600 font-mono shadow-xs">
+                        <Lock className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-emerald-600 flex-none" />
+                        <span className="truncate tracking-tight sm:tracking-normal">digisafepurwakarta.web.id</span>
                       </div>
 
                       {/* Live indicator dot */}
-                      <div className="flex items-center gap-1.5">
-                        <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                        <span className="text-[11px] font-medium text-neutral-400 hidden sm:inline">Active</span>
+                      <div className="flex items-center gap-1 sm:gap-1.5 flex-none">
+                        <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-500 animate-pulse" />
+                        <span className="text-[10px] sm:text-[11px] font-medium text-neutral-400 hidden sm:inline">Active</span>
                       </div>
                     </div>
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import MobileIntro from './components/MobileIntro'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -8,6 +9,9 @@ import Progression from './components/Progression'
 export default function App() {
   return (
     <div className="min-h-screen w-full max-w-full overflow-x-hidden bg-[#F9F9F9] text-[#111111] flex flex-col relative selection:bg-[#111111] selection:text-[#F9F9F9]">
+      {/* Mobile-Only Cinematic Intro Animation (width < 768px, exactly 2s) */}
+      <MobileIntro />
+
       {/* Sticky Glass Navbar */}
       <Navbar />
 
